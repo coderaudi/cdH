@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import CircularLoading from "../components/loadings/circularLoading.js";
 import LinearProgress from "../components/loadings/linearProgress.js";
+import Cart from "../components/carts/sharecart";
 
 class Display extends Component {
   render() {
@@ -13,6 +14,8 @@ class Display extends Component {
         {this.props.adminMail}
         <CircularLoading />
         <LinearProgress />
+
+        <Cart />
       </div>
     );
   }
