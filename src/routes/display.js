@@ -3,18 +3,22 @@ import { connect } from "react-redux";
 import CircularLoading from "../components/loadings/circularLoading.js";
 import LinearProgress from "../components/loadings/linearProgress.js";
 import Cart from "../components/carts/sharecart";
+import LoginMenuTab from "../components/tabs/loginTab";
+
+import Header from "../components/header/header";
 
 class Display extends Component {
   render() {
     return (
       <div>
+        <Header />
         <h1>Show redux store data</h1>
         {this.props.storeArticles}
         {this.props.adminName}
         {this.props.adminMail}
         <CircularLoading />
         <LinearProgress />
-
+        <LoginMenuTab />
         <Cart />
       </div>
     );
